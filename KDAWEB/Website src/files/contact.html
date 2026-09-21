@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Contact — K.D.A Kayel's Digital Arts</title>
+  <meta name="description" content="Send an inquiry, get an estimate, or message K.D.A Kayel's Digital Arts on Facebook.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap nav-bar">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">KDA</span>
+      <span>K.D.A<small>KAYEL'S DIGITAL ARTS</small></span>
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="navLinks" aria-label="Menu">&#9776;</button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="process.html">How it works</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+
+  <section class="band band--slate">
+    <div class="wrap">
+      <h1>Send an inquiry</h1>
+      <p class="lead">Fill this out and you'll get a rough total right away. Confirmation still happens over Facebook Messenger or text.</p>
+
+      <form class="form-grid" id="inquiryForm" style="margin-top:2rem" novalidate>
+        <div class="field">
+          <label for="name">Your name</label>
+          <input type="text" id="name" name="name" data-required autocomplete="name">
+          <span class="error"></span>
+        </div>
+
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" data-required autocomplete="email">
+          <span class="error"></span>
+        </div>
+
+        <div class="field">
+          <label for="artType">What are you ordering?</label>
+          <select id="artType" name="artType" data-required>
+            <option value="">Choose one</option>
+            <option value="face">Face — &#8369;200</option>
+            <option value="half">Half body — &#8369;300</option>
+            <option value="full">Full body — &#8369;500</option>
+            <option value="bw">Print, black &amp; white — &#8369;5/page</option>
+            <option value="colored">Print, colored — &#8369;10/page</option>
+          </select>
+          <span class="error"></span>
+        </div>
+
+        <div class="field">
+          <label for="qty">How many?</label>
+          <input type="number" id="qty" name="qty" min="1" value="1">
+          <span class="error"></span>
+        </div>
+
+        <div class="field field--full">
+          <label for="details">Details</label>
+          <textarea id="details" name="details" placeholder="Background colour, outfit, deadline, anything you want changed from the photo."></textarea>
+          <span class="error"></span>
+        </div>
+
+        <div class="quote-box">
+          Estimated total: <strong id="estTotal">&#8212;</strong>
+          <p class="form-note" style="margin:.4rem 0 0">Hard copy is already included for digital art orders. Delivery isn't.</p>
+        </div>
+
+        <div class="field field--full">
+          <button class="btn" type="submit">Send inquiry</button>
+          <p class="success" id="formResult" hidden tabindex="-1"></p>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <section class="band band--stone">
+    <div class="wrap">
+      <h2>Or message directly</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Facebook</h3>
+          <p><a href="https://www.facebook.com/share/1D2No4vyFd/" target="_blank" rel="noopener">Open the K.D.A page</a> — fastest reply, and you can send the photo straight through chat.</p>
+        </article>
+        <article class="card">
+          <h3>Phone</h3>
+          <p><a href="tel:+639300712097">0930-071-2097</a> — call or text for pickup arrangements.</p>
+        </article>
+        <article class="card">
+          <h3>Payment</h3>
+          <p>GCash, sent after the size and reference photo are confirmed.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-row">
+      <span class="pill">FB</span>
+      <p><a href="https://www.facebook.com/share/1D2No4vyFd/" target="_blank" rel="noopener">facebook.com/KayelsDigitalArts</a></p>
+    </div>
+    <div class="footer-row">
+      <span class="pill">Phone</span>
+      <p><a href="tel:+639300712097">0930-071-2097</a></p>
+    </div>
+    <p class="copyright">&copy; <span id="year">2026</span> K.D.A Kayel's Digital Arts</p>
+  </div>
+</footer>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>
